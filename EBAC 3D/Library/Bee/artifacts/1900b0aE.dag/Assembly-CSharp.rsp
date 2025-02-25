@@ -369,6 +369,7 @@
 "Assets/Scripts/Ebac/StateMachineEditor.cs"
 "Assets/Scripts/Game Manager/GameManager.cs"
 "Assets/Scripts/Game Manager/GMStateIntro.cs"
+"Assets/Scripts/Player/Player.cs"
 "Assets/Scripts/Singleton/Singleton.cs"
 -langversion:9.0
 
