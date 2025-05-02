@@ -41,11 +41,11 @@ public class ProjectileBase : MonoBehaviour
 
                     damageable.Damage(damageAmount, dir);
                 }
-
+                Destroy(gameObject);
                 break;
             }
         }
-        Destroy(gameObject);
+        
     }
 
 
