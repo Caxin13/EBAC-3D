@@ -395,11 +395,20 @@
 "Assets/Scripts/Gun/UIFillUpdater.cs"
 "Assets/Scripts/Health/HealthBase.cs"
 "Assets/Scripts/Interfaces/IDamageable.cs"
+"Assets/Scripts/Items/CollectableBase.cs"
+"Assets/Scripts/Items/CollectableCoin.cs"
+"Assets/Scripts/Items/ItemLayout.cs"
+"Assets/Scripts/Items/ItemLayoutManager.cs"
+"Assets/Scripts/Items/ItemManager.cs"
 "Assets/Scripts/Player/Player.cs"
 "Assets/Scripts/Player/PlayerAbilityBase.cs"
 "Assets/Scripts/Player/PlayerAbilityShoot.cs"
 "Assets/Scripts/Singleton/Singleton.cs"
 "Assets/Scripts/Utils/ShakeCamera.cs"
+"Assets/Scripts/Utils/SO/SOFloat.cs"
+"Assets/Scripts/Utils/SO/SOInt.cs"
+"Assets/Scripts/Utils/SO/SOString.cs"
+"Assets/Scripts/Utils/SO/SOUIIntUpdate.cs"
 -langversion:9.0
 
 /deterministic

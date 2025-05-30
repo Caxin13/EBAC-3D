@@ -30,6 +30,8 @@ public class FlashColor : MonoBehaviour
         defaultColor = meshRenderer.material.GetColor("_emissionColor");
     }
 */
+
+
     [NaughtyAttributes.Button]
 
     public void Flash()
