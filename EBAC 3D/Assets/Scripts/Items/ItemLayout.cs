@@ -12,17 +12,20 @@ namespace Items
 
         public Image uiIcon;
         public TextMeshProUGUI uiValue;
+        // public TextMeshProUGUI uiKeyText; //test
 
         public void Load(ItemSetup setup)
         {
             _currSetup = setup;
+            UpdateUI();
         }
 
         private void UpdateUI()
         {
 
             uiIcon.sprite = _currSetup.icon;
-            UpdateUI();
+          //  uiKeyText.text = _currSetup.associatedKey;
+
         }
 
         private void Update()
