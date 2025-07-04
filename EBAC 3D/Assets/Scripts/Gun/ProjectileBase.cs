@@ -13,6 +13,10 @@ public class ProjectileBase : MonoBehaviour
 
     public List<string> tagsToHit;
 
+    public ParticleSystem collisionParticles;
+
+    public GameObject projectileMesh;
+
 
     private void Awake()
     {
@@ -24,12 +28,21 @@ public class ProjectileBase : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
+    void DestroyCollision()
+    {
+        Destroy(gameObject);
+    }
+
+
+
     void OnCollisionEnter(Collision collision)
     {
         foreach (var t in tagsToHit)
         {
             if (collision.transform.tag == t)
             {
+                var em = collisionParticles.emission;
+                var particleDuration = collisionParticles.duration;
 
                 var damageable = collision.transform.GetComponent<IDamageable>();
 
@@ -41,7 +54,10 @@ public class ProjectileBase : MonoBehaviour
 
                     damageable.Damage(damageAmount, dir);
                 }
-                Destroy(gameObject);
+                em.enabled = true;
+                collisionParticles.Play();
+                projectileMesh.SetActive(false);
+                Invoke(nameof(DestroyCollision), particleDuration);
                 break;
             }
         }

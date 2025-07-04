@@ -104,7 +104,7 @@ public class Player : Singleton<Player>//, IDamageable
             if(_jumping)
             {
                 _jumping = false;
-                animator.SetTrigger("Land");
+       //         animator.SetTrigger("Land");
             }
 
             vSpeed = 0;
@@ -115,7 +115,7 @@ public class Player : Singleton<Player>//, IDamageable
                 if(!_jumping)
                 {
                     _jumping = true;
-                    animator.SetTrigger("Jump");
+       //             animator.SetTrigger("Jump");
                 }
 
                 
