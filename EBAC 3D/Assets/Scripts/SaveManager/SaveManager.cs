@@ -55,6 +55,25 @@ public class SaveManager : Singleton<SaveManager>
     {
         _saveSetup.coins = Items.ItemManager.Instance.GetItemByType(Items.ItemType.COIN).soInt.value;
         _saveSetup.health = Items.ItemManager.Instance.GetItemByType(Items.ItemType.LIFE_PACK).soInt.value;
+        _saveSetup.checkpointKey = CheckpointManager.Instance.lastCheckpointKey;
+
+        var player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            var healthBase = player.GetComponent<HealthBase>();
+            if (healthBase != null)
+            {
+                _saveSetup.health = healthBase.CurrentLife;
+            }
+        }
+
+
+        _saveSetup.clothesTypes.Clear();
+        foreach (var setup in Cloth.ClothesManager.Instance.clothesSetup)
+        {
+            _saveSetup.clothesTypes.Add(setup.clothesType);
+        }
+
         Save();
     }
 
@@ -128,6 +147,8 @@ public class SaveSetup
     public string playerName;
     public float coins;
     public float health;
+    public int checkpointKey;
+    public List<Cloth.ClothesType> clothesTypes = new List<Cloth.ClothesType>();
 
 
 

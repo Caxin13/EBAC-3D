@@ -10,6 +10,8 @@ public class HealthBase : MonoBehaviour, IDamageable
     public bool destroyOnKill = false;
     [SerializeField] private float _currentLife;
 
+    public float CurrentLife => _currentLife;
+
     public Action<HealthBase> OnDamage;
     public Action<HealthBase> OnKill;
 

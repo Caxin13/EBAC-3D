@@ -4276,6 +4276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PFB_SaveManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5822141876233741628, guid: 7b13d7c3c40b45943b998052ceebf216, type: 3}
+      propertyPath: _saveSetup.clothesTypes.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
