@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+
+/*
 [CustomEditor(typeof(FSMteste))]
 public class StateMachineEditor : Editor
 {
     public bool showFoldout;
 
-    public override void OnInspectorGUI()
+  /*  public override void OnInspectorGUI()
     {
 
         base.OnInspectorGUI();
@@ -18,7 +20,7 @@ public class StateMachineEditor : Editor
 
         EditorGUILayout.Space(30);
         EditorGUILayout.LabelField("State Machine");
-        //
+        
         if (fsm.stateMachine == null) return;
 
         if(fsm.stateMachine.CurrentState != null)
@@ -43,5 +45,5 @@ public class StateMachineEditor : Editor
         }
 
     }
-
 }
+  */

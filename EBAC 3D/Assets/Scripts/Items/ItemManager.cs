@@ -28,7 +28,18 @@ namespace Items
 
         private void LoadItemsFromSave()
         {
-            AddByType(ItemType.COIN, (int) SaveManager.Instance.Setup.coins);
+            if (SaveManager.Instance == null)
+            {
+                Debug.LogError("SaveManager.Instance is null!");
+                return;
+            }
+            if (SaveManager.Instance.Setup == null)
+            {
+                Debug.LogError("SaveManager.Instance.Setup is null!");
+                return;
+            }
+
+            AddByType(ItemType.COIN, (int)SaveManager.Instance.Setup.coins);
             AddByType(ItemType.LIFE_PACK, (int)SaveManager.Instance.Setup.health);
 
 
