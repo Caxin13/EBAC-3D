@@ -5877,15 +5877,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68780d90cf27904db3368eb16abfefb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxType: 3
   collider: {fileID: 7576156277955639908}
   FlashColor: {fileID: 126033542099855938}
   particleSystem: {fileID: 8595595770511088257}
   startLife: 10
+  lookAtPlayer: 0
   _currentLife: 0
   _animationBase: {fileID: 5607016437637483805}
   startAnimationDuration: 0.2
   startAnimationEase: 27
   startWithBornAnimation: 1
+  OnKillEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &7576156277955639908
 BoxCollider:
   m_ObjectHideFlags: 0

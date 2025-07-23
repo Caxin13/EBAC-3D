@@ -6004,15 +6004,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8152c53777bf8f40808484a1696d092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxType: 3
   collider: {fileID: 7786969694408101056}
   FlashColor: {fileID: 6820776123967083339}
   particleSystem: {fileID: 7106640296314464153}
   startLife: 12
+  lookAtPlayer: 0
   _currentLife: 0
   _animationBase: {fileID: 4590052856538875538}
   startAnimationDuration: 0.2
   startAnimationEase: 27
   startWithBornAnimation: 1
+  OnKillEvent:
+    m_PersistentCalls:
+      m_Calls: []
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
