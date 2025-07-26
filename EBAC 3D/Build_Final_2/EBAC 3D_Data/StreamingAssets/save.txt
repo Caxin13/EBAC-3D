@@ -1,0 +1,12 @@
+{
+    "lastLevel": 0,
+    "playerName": "Teste",
+    "coins": 6.0,
+    "health": 25.0,
+    "checkpointKey": 1,
+    "clothesTypes": [
+        0,
+        1,
+        2
+    ]
+}
